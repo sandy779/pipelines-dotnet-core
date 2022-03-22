@@ -22,4 +22,5 @@ steps:
     script: |
       # Write your PowerShell commands here.
       
-      Get-Command "print"
+      $currDir = Get-Location
+      Write-Host $currDir
